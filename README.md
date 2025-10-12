@@ -20,3 +20,6 @@ make NOGUI=1 WXSTATIC=1 WX_ROOT=/XXXX/wxWidgets-3.3.0 wxbuild
 
 make NOGUI=1 WXSTATIC=1 WX_ROOT=/XXXX/wxWidgets-3.3.0 CC=gcc -j16  
 ```
+```bash
+apk add build-base pkgconf linux-headers libusb-dev pcsc-lite-dev eudev-dev
+```
