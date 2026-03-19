@@ -11,7 +11,7 @@
 */
 
 #include "Hash.h"
-#include "blake2.h"
+#include "blake2b.h"
 #include "Crypto/blake2s.h"
 #include "Crypto/Sha2.h"
 #include "Crypto/Whirlpool.h"
