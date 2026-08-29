@@ -30,3 +30,7 @@ chmod +x /tmp/wx-config-fake
 make NOGUI=1 WXSTATIC=0 WX_CONFIG=/tmp/wx-config-fake
 
 ```
+```bash
+make NOGUI=1 WXSTATIC=1 WX_ROOT=/VeraCrypt/wxwidgets wxbuild
+
+make NOGUI=1 WXSTATIC=1 WX_ROOT=/VeraCrypt/wxwidgets -j2
