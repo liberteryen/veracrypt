@@ -23,3 +23,10 @@ make NOGUI=1 WXSTATIC=1 WX_ROOT=/XXXX/wxWidgets-3.3.0 CC=gcc -j16
 ```bash
 apk add build-base pkgconf linux-headers libusb-dev pcsc-lite-dev eudev-dev yasm fuse-dev
 ```
+
+```bash
+echo -e '#!/bin/sh\n/usr/bin/wx-config $(echo "$@" | sed "s/--static//g")' > /tmp/wx-config-fake
+chmod +x /tmp/wx-config-fake
+make NOGUI=1 WXSTATIC=0 WX_CONFIG=/tmp/wx-config-fake
+
+```
